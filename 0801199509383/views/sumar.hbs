@@ -1,0 +1,30 @@
+<h1>Suma de numeros/h1>
+<form action="/sumar" method="post">
+  <label>Valor 1</label>
+  <input type="text" value="{{txtValor1}}"
+  placeholder="valor 1"
+  name="txtValor1" />
+  <br/>
+  <label>Valor 2</label>
+  <input type="text" value="{{txtValor2}}"
+  placeholder="valor 2"
+  name="txtValor2" />
+  <br/>
+  <button type="submit" value="registrar"
+  name="btnEnviar">Registrar</button>
+  <button type="reset" value="cancelar"
+  name="btnCancelar">Cancelar</button>
+</form>
+<label>Suma de numeros</label>
+<input type="text" value="{{txtTotal}}"
+placeholder="valor total"
+name="txtTotal" />
+<div>
+  <ul>
+    {{#each lugar}}
+    <li>
+      {{valor1}} | {{valor2}} | {{suma}}
+    </li>
+    {{/each}}
+  </ul>
+</div>
